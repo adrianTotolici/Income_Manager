@@ -1,0 +1,49 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!--<hibernate-configuration>-->
+    <!--<session-factory>-->
+        <!--<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>-->
+        <!--<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>-->
+        <!--<property name="hibernate.connection.username">postgres</property>-->
+
+        <!--<property name="hibernate.connection.password">adrian</property>-->
+        <!--<property name="hibernate.connection.url">jdbc:postgresql://localhost:1527/postgres</property>-->
+
+        <!--<property name="connection_pool_size">1</property>-->
+        <!--<property name="hbm2ddl.auto">update</property>-->
+        <!--<property name="show_sql">true</property>-->
+
+        <!--<mapping class="eu.IncomeManager.dataBase.Depozit"/>-->
+        <!--<mapping class="eu.IncomeManager.dataBase.Income"/>-->
+        <!--<mapping class="eu.IncomeManager.dataBase.Produse"/>-->
+        <!--<mapping class="eu.IncomeManager.dataBase.Bills"/>-->
+        <!--<mapping class="eu.IncomeManager.dataBase.Luxuries"/>-->
+        <!--<mapping class="eu.IncomeManager.dataBase.Loans"/>-->
+    <!--</session-factory>-->
+
+<!--</hibernate-configuration>-->
+
+<hibernate-configuration>
+<session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.username">postgres</property>
+
+    <property name="hibernate.connection.password">adrian88</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/universal_app</property>
+
+    <property name="connection_pool_size">1</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="show_sql">true</property>
+
+    <mapping class="eu.IncomeManager.dataBase.Depozit"/>
+    <mapping class="eu.IncomeManager.dataBase.Income"/>
+    <mapping class="eu.IncomeManager.dataBase.Produse"/>
+    <mapping class="eu.IncomeManager.dataBase.Bills"/>
+    <mapping class="eu.IncomeManager.dataBase.Luxuries"/>
+    <mapping class="eu.IncomeManager.dataBase.Loans"/>
+</session-factory>
+
+</hibernate-configuration>

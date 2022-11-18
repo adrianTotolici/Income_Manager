@@ -1,0 +1,27 @@
+1) install posgresql
+		$ sudo apt-get update
+		$ sudo apt-get install postgresql postgresql-contrib
+   -create user
+        $ psql
+        $ createuser --interactive
+        incomemanager
+        Y
+		$ exit
+   -alter password
+        $ sudo -u postgres psql
+        alter user incomemanager password '123'
+   -create database
+
+2) install java 
+			$ sudo add-apt-repository ppa:webupd8team/java
+			$ sudo apt-get update
+			$ sudo apt-get install oracle-java8-installer
+			$ java -version
+	-set java path
+			$ sudo apt-get install oracle-java8-set-default
+	-build sh file
+	        $ sudo cp /home/adrian/IncomeManager2/IncomeManager2.sh /home/adrian/desktop/
+	        $ sudo chmod 777 /home/adrian/desktop/IncomeManager2.sh
+    -copy jar to desktop
+ 	-run jar
+			$ java -jar IncomeManager2.jar

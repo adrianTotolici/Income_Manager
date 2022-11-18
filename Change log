@@ -1,0 +1,12 @@
+Income manager 2.3.0.1
+
+* adaugare functie de stergere randuri multiple din tabela
+* modificare functie de primire imprumuturi
+* fix total luxuries afisaj
+
+v2.3.0.1
+* fix backup database folder
+
+v0.4.1
+* add new instalation method for linux
+* add luncher for linux
